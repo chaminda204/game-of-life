@@ -1,0 +1,16 @@
+<configuration>
+    <!-- Set root log level to INFO (change to DEBUG for more detail) -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+    <!-- Console output appender -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Optional: Fine-tune specific package/class log levels -->
+    <logger name="com.au.bgl.gameoflife.rules" level="DEBUG"/>
+</configuration>
